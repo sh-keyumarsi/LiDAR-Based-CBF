@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/localadmin/ros2_ws/install/vicon_receiver/include/**",
+        "/home/localadmin/ros2_ws/install/keyboard_msgs/include/**",
+        "/home/localadmin/ros2_ws/install/crazyflie_interfaces/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/localadmin/ros2_ws/src/ros2-vicon-receiver/vicon_receiver/include/**",
+        "/home/localadmin/ros2_ws/src/rpw_setup/include/**",
+        "/home/localadmin/ros2_ws/src/turtlebot3/turtlebot3_node/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
