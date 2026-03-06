@@ -11,8 +11,11 @@ The core idea is to learn a safety function online from LiDAR sensor data using 
 
 Key features of the approach:
 GP-based safety function learned online from LiDAR edge detections (Proposition 1)
+
 Single-pass data usage — no accumulation of past data across timesteps
+
 Handles arbitrary obstacle shapes and dynamic obstacles with one unified safety function
+
 CBF-QP minimally modifies the nominal controller to enforce safety 
 
 # Simulation Results:
@@ -34,12 +37,17 @@ python sim2D_main.py
 This launches a 2D simulation with 3 unicycle robots navigating to their goals while avoiding static obstacles and each other. A matplotlib animation window will open showing the robots, the GP safety map, and minimum LiDAR distance plots in real time.
 
 Configuration
+
 All tunable parameters are in sim2D_obstacle_GP.py:
+
 Scene parameters (SceneSetup)
+
 GP hyperparameters (SceneSetup)
 
 In sim2D_obstacle_GP.py, set:
+
 pythonSimSetup.save_animate = True
+
 Then run. The output GIF is saved to animation_result/sim2D_obstacle_GP/.
 
 
