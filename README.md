@@ -3,7 +3,7 @@ LiDAR-Based Online GP-CBF for Safe Navigation in Unknown Environments
 A Python simulation of the LiDAR-based Gaussian Process Control Barrier Function (GP-CBF) for safe autonomous navigation in unknown environments with static and dynamic obstacles.
 This repository implements the method proposed in:
 
-S. Keyumarsi, M. W. S. Atman and A. Gusrialdi, "LiDAR-Based Online Control Barrier Function Synthesis for Safe Navigation in Unknown Environments," in IEEE Robotics and Automation Letters, vol. 9, no. 2, pp. 1043-1050, Feb. 2024, doi: 10.1109/LRA.2023.3339059. keywords: {Safety;Laser radar;Bayes methods;Robot sensing systems;Navigation;Mobile robots;Autonomous agents;Machine learning;Robot control;Autonomous agents;collision avoidance;machine learning for robot control},
+S. Keyumarsi, M. W. S. Atman and A. Gusrialdi, "LiDAR-Based Online Control Barrier Function Synthesis for Safe Navigation in Unknown Environments" in IEEE Robotics and Automation Letters, vol. 9, no. 2, pp. 1043-1050, Feb. 2024, doi: 10.1109/LRA.2023.3339059. keywords: {Safety;Laser radar;Bayes methods;Robot sensing systems;Navigation;Mobile robots;Autonomous agents;Machine learning;Robot control;Autonomous agents;collision avoidance;machine learning for robot control},
 https://ieeexplore.ieee.org/abstract/document/10339852
 
 Overview
