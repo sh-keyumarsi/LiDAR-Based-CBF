@@ -1,12 +1,12 @@
-# LiDAR-Based Online GP-CBF for Safe Navigation in Unknown Environments
+# LiDAR-Based Online Control Barrier Function Synthesis for Safe Navigation in Unknown Environments
+This repository provides a simulation reproducing the experiments from https://ieeexplore.ieee.org/abstract/document/10339852, including the simulator, source code, and data. 
 
-A Python simulation of the LiDAR-based Gaussian Process Control Barrier Function (GP-CBF) for safe autonomous navigation in unknown environments with static and dynamic obstacles.
-This repository implements the method proposed in:
 
-S. Keyumarsi, M. W. S. Atman and A. Gusrialdi, "LiDAR-Based Online Control Barrier Function Synthesis for Safe Navigation in Unknown Environments" in IEEE Robotics and Automation Letters, vol. 9, no. 2, pp. 1043-1050, Feb. 2024, doi: 10.1109/LRA.2023.3339059. keywords: {Safety;Laser radar;Bayes methods;Robot sensing systems;Navigation;Mobile robots;Autonomous agents;Machine learning;Robot control;Autonomous agents;collision avoidance;machine learning for robot control},
-https://ieeexplore.ieee.org/abstract/document/10339852
+Code and simulation assets for the paper:
+> **LiDAR-Based Online Control Barrier Function Synthesis for Safe Navigation in Unknown Environments**  
+> Shaghayegh Keyumarsi et al.
 
-#Overview
+Overview
 The core idea is to learn a safety function online from LiDAR sensor data using a sparse Gaussian Process regression, then synthesize a Control Barrier Function that rectifies a nominal controller to guarantee collision-free navigation — without any prior knowledge of the environment.
 
 Key features of the approach:
@@ -15,6 +15,15 @@ Single-pass data usage — no accumulation of past data across timesteps
 Handles arbitrary obstacle shapes and dynamic obstacles with one unified safety function
 CBF-QP minimally modifies the nominal controller to enforce safety 
 
+# Simulation Results:
+A video of the full simulation is included in the repository:
+GP-CBF simulation_.mp4 — shows all three robots navigating to their goals while avoiding static obstacles and each other using the GP-CBF safety controller.
+Additionally, the folder \lidar_gp_cbf\animation_result\sim2D_obstacle_GP contains per-robot GIF animations and plots generated after simulation, including:
+
+Safety function color maps showing the GP prediction evolving in real time for each robot
+Minimum LiDAR distance plots over time
+Rectified control input plots (u_x, u_y, ‖u‖)
+Safety function value h(t) over time
 
 # Usage
 Run the simulation:
@@ -31,14 +40,5 @@ In sim2D_obstacle_GP.py, set:
 pythonSimSetup.save_animate = True
 Then run. The output GIF is saved to animation_result/sim2D_obstacle_GP/.
 
-# Simulation Results:
-A video of the full simulation is included in the repository:
-GP-CBF simulation_.mp4 — shows all three robots navigating to their goals while avoiding static obstacles and each other using the GP-CBF safety controller.
-Additionally, the folder \lidar_gp_cbf\animation_result\sim2D_obstacle_GP contains per-robot GIF animations and plots generated after simulation, including:
-
-Safety function color maps showing the GP prediction evolving in real time for each robot
-Minimum LiDAR distance plots over time
-Rectified control input plots (u_x, u_y, ‖u‖)
-Safety function value h(t) over time
 
 
