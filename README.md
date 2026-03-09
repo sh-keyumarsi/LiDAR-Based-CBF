@@ -21,11 +21,11 @@ CBF-QP minimally modifies the nominal controller to enforce safety <br>
 
 ### Simulation Results:
 A video of the full simulation is included in the repository:
-GP-CBF simulation_.mp4 shows all three robots navigating to their goals while avoiding static obstacles and each other using the GP-CBF safety controller. Additionally, the folder \lidar_gp_cbf\animation_result\sim2D_obstacle_GP contains per-robot GIF animations and plots generated after simulation, including:
-Safety function color maps showing the GP prediction evolving in real time for each robot <br>
-Minimum LiDAR distance plots over time <br>
-Rectified control input plots (u_x, u_y, ‖u‖) <br>
-Safety function value h(t) over time <br>
+GP-CBF simulation_.mp4 shows all three robots navigating to their goals while avoiding static obstacles and each other using the GP-CBF safety controller. Additionally, the folder \lidar_gp_cbf\ animation_result\ sim2D_obstacle_GP contains per-robot GIF animations and plots generated after simulation, including:
+- Safety function color maps showing the GP prediction evolving in real time for each robot 
+- Minimum LiDAR distance plots over time 
+- Rectified control input plots (u_x, u_y, ‖u‖) 
+- Safety function value h(t) over time 
 
 ## Usage
 Run the simulation: 
