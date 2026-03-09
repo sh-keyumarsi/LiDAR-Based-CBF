@@ -37,9 +37,8 @@ All tunable parameters are in sim2D_obstacle_GP.py: <br>
 Scene parameters (SceneSetup) <br>
 GP hyperparameters (SceneSetup)
 
-### AnOutput
-In sim2D_obstacle_GP.py, set:
 ### Outputs & animations
+In sim2D_obstacle_GP.py, set: <br>
 pythonSimSetup.save_animate = True. <br>
 item Then run. The output GIF is saved to animation_result/sim2D_obstacle_GP/.
 
