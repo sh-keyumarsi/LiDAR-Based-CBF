@@ -33,7 +33,7 @@ python sim2D_main.py <br>
 This launches a 2D simulation with 3 unicycle robots navigating to their goals while avoiding static obstacles and each other. A matplotlib animation window will open showing the robots, the GP safety map, and minimum LiDAR distance plots in real time.
 
 ### Configuration
-All tunable parameters are in sim2D_obstacle_GP.py:
+All tunable parameters are in sim2D_obstacle_GP.py: <br>
 Scene parameters (SceneSetup) <br>
 GP hyperparameters (SceneSetup)
 
