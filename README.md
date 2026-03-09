@@ -42,5 +42,7 @@ In sim2D_obstacle_GP.py, set: <br>
 pythonSimSetup.save_animate = True. <br>
 item Then run. The output GIF is saved to animation_result/sim2D_obstacle_GP/.
 
+## Contact
+Shaghayegh Keyumarsi — GitHub: sh-keyumarsi
 
 
